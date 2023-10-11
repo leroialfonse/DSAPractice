@@ -4,7 +4,28 @@
 //   reverse('abcd') === 'dcba'
 //   reverse('Hello!') === '!olleH'
 
-function reverse(str) {}
+function reverse(str) {
+	// // return str.split('').reverse().join('')
+
+	// // Create an empty string to store the new string into.
+	// let res = ''
+	// // Loop over the original string letter by letter
+	// for (let i = 0; i < str.length; i++) {
+	// 	// plug the letters you find into res one by one, by adding them to res.
+	// 	// letter = str[i]
+	// 	res = str[i] + res
+	// }
+	// // return the new string.
+	// return res
+
+	// And, using the reduce method.
+
+	let line = str.split('')
+
+	return line.reduce((output, char) => output = char + output)
+
+	// The Complexity of  these solutions is O(n)
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
