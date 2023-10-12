@@ -6,9 +6,14 @@
 //   palindrome("love") === false
 
 function palindrome(str) {
-  let spun = str.toLowerCase().split('').reverse().join('')
+  // let spun = str.toLowerCase().split('').reverse().join('')
 
-  return spun === str.toLowerCase()
+  str = str.toLowerCase()
+
+  return str === str.split('').reverse().join('')
+  // What's the time complexity of this solution ? 
+
+  // O(n). Why? Becasue you have to go over every character in the input string to reverse it 
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
